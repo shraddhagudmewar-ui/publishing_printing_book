@@ -49,7 +49,13 @@ app.use('/uploads', express.static(path.join(__dirname, '../uploads')));
 if (process.env.NODE_ENV !== 'production') {
   app.use(morgan('dev'));
 }
-
+app.get('/', (req, res) => {
+  res.status(200).json({
+    success: true,
+    message: 'Welcome to KA Group of Publications API',
+    health: '/api/health'
+  });
+});
 // Health check endpoint
 app.get('/api/health', (req, res) => {
   res.status(200).json({
