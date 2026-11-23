@@ -38,12 +38,8 @@ const AdminLayout = () => {
     { to: '/admin/payments', label: 'Payment Management', icon: CreditCard },
     { to: '/admin/inventory', label: 'Inventory Management', icon: Boxes },
     { to: '/admin/delivery', label: 'Delivery Management', icon: Truck },
-    { to: '/admin/reviews', label: 'Reviews & Ratings', icon: Star },
     { to: '/admin/gallery', label: 'Photo Gallery', icon: Image },
-    { to: '/admin/content', label: 'Website Content', icon: Globe },
-    { to: '/admin/notifications', label: 'Notifications', icon: Bell },
-    { to: '/admin/settings', label: 'Settings', icon: Settings },
-    { to: '/admin/profile', label: 'Admin Profile', icon: User },
+
   ];
 
   return (
